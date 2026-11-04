@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/feed.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="chats">
+<div class="app">
+<section class="screen ativa" id="chats">
+  <header class="busca">
+    <input placeholder="Pesquisar conversa" oninput="filtrar(this.value)">
+  </header>
+  <ul class="lista-chat">
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário A</li>
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário B</li>
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário C</li>
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário D</li>
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário E</li>
+    <li onclick="go('conversa')"><img class="avatar" src="../img/default.png" alt="">Usuário F</li>
+  </ul>
+</section>
+<nav class="nav" id="nav">
+  <button data-go="feed" aria-label="Feed">🖼</button>
+  <button data-go="chats" aria-label="Chats">💬</button>
+  <button data-go="perfil" aria-label="Perfil">👤</button>
+</nav>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/chat.js"></script>
+</body>
+</html>

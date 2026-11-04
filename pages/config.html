@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="config">
+<div class="app">
+<section class="screen ativa" id="config">
+  <header class="topo laranja">
+    <button class="voltar" onclick="back()">←</button>
+    <span class="titulo">Configurações</span>
+  </header>
+  <ul class="menu">
+    <li class="v" onclick="go('salvas')">Obras Salvas</li>
+    <li class="r" onclick="go('notificacoes')">Notificações</li>
+    <li class="v" onclick="go('minhas-compras')">Minhas Compras</li>
+    <li class="r" onclick="go('carrinho')">Carrinho de Compras</li>
+    <li class="v" onclick="go('editar-dados')">Editar Informações de Entrega</li>
+    <li class="r" onclick="go('sobre')">Sobre</li>
+    <li class="v" onclick="abrirModal('modal')">Sair</li>
+    <li class="r" onclick="abrirModal('modal-excluir')">Excluir Conta</li>
+  </ul>
+</section>
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <h3>Sair da sua conta?</h3>
+    <button class="btn r" onclick="fecharModal('modal');go('login')">Sair</button>
+    <button class="btn v" onclick="fecharModal('modal')">Cancelar</button>
+  </div>
+</div>
+<div class="modal" id="modal-excluir" hidden>
+  <div class="modal-card"><h3>Excluir sua conta?</h3>
+    <button class="btn r" onclick="fecharModal('modal-excluir');go('login')">Excluir</button>
+    <button class="btn v" onclick="fecharModal('modal-excluir')">Cancelar</button></div>
+</div>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

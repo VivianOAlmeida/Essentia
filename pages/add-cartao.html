@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="add-cartao">
+<div class="app">
+<section class="screen ativa" id="add-cartao">
+  <header class="topo laranja">
+    <button class="voltar" onclick="back()">←</button>
+    <span class="titulo">Adicionar Cartão de crédito</span>
+  </header>
+  <form class="form-cartao" onsubmit="event.preventDefault();salvarCartao(this)">
+    <span class="chip esc">Informações do cartão de crédito</span>
+    <input id="numcartao" inputmode="numeric" maxlength="19" placeholder="Número do cartão" required>
+    <div class="duas">
+      <input id="validade" inputmode="numeric" maxlength="5" placeholder="Data de validade" required>
+      <input inputmode="numeric" maxlength="4" placeholder="CVV" required>
+    </div>
+    <input id="nomecartao" placeholder="Nome do cartão" required>
+    <input id="cpf" inputmode="numeric" maxlength="14" placeholder="CPF" required>
+    <button class="btn r centro">Enviar</button>
+  </form>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/pagamento.js"></script>
+<script src="../js/cartao.js"></script>
+</body>
+</html>

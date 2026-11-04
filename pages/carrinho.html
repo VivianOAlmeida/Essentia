@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="carrinho">
+<div class="app">
+  <section class="screen ativa" id="carrinho">
+    <header class="topo verde-esc">
+      <button class="voltar" onclick="back()">←</button>
+      <span class="titulo">Carrinho</span>
+    </header>
+    <div id="itens-carrinho"></div>
+    <footer class="rodape-carrinho">
+      <span id="resumo">Produtos selecionados: 00<br>Valor sem frete: R$00,00</span>
+      <button onclick="go('compra')">Finalizar compra</button>
+    </footer>
+  </section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/carrinho.js"></script>
+</body>
+</html>

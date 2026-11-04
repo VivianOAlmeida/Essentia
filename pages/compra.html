@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="compra">
+<div class="app">
+<section class="screen ativa" id="compra">
+  <header class="topo">
+    <button class="voltar" onclick="back()">←</button>
+  </header>
+  <div class="erro" id="erro" role="alert" hidden></div>
+  <div class="caixa item">
+    <img class="miniatura" src="../img/default.png" alt="">
+    <div>Desenho bonitinho<br>Preço<br>Descrição</div>
+  </div>
+  <h4>Formas de pagamento</h4>
+  <div class="caixa pagto">
+    <button data-tipo="credito" onclick="escolher('credito')">Cartão de crédito</button>
+    <button data-tipo="debito" onclick="escolher('debito')">Cartão de débito</button>
+    <button data-tipo="pix" onclick="escolher('pix')">Pix</button>
+    <p class="pag-sel" id="pag-sel">Nenhuma forma selecionada</p>
+  </div>
+  <h4>Dados de entrega</h4>
+  <div class="caixa">Endereço de entrega<br>Rua Fulano de Tal, 234 - Bairro Jojo Todynho - Cidade, UF<br>Endereço residencial<br>Sem complemento<br>
+    <span class="frete">Frete: R$00,00</span>
+  </div>
+  <h4>Valor Final</h4>
+  <div class="caixa final">Frete + valor do produto + Impostos - promoção, entre outros.</div>
+  <button class="btn r centro" onclick="finalizar()">Finalizar compra</button>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/pagamento.js"></script>
+</body>
+</html>

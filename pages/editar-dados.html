@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="editar-dados">
+<div class="app">
+<section class="screen ativa" id="editar-dados">
+  <header class="topo verde-esc">
+    <button class="voltar" onclick="back()">←</button>
+    <span class="titulo">Editar Seus Dados</span>
+  </header>
+  <form class="dados" onsubmit="event.preventDefault();toast('Dados atualizados');setTimeout(back,900)">
+    <label>Nome Completo (Nome e Sobrenome)<input required></label>
+    <label>Telefone<input id="tel" inputmode="numeric" maxlength="15" required></label>
+    <label>CEP<input id="cep" inputmode="numeric" maxlength="9" required></label>
+    <label>Endereço<input required></label>
+    <label>Número da Residência<input inputmode="numeric" required></label>
+    <label>Complemento (opcional)<input placeholder="Apartamento, sala, conjunto, edifício..."></label>
+    <label>Bairro<input required></label>
+    <div class="duas">
+      <label>Cidade<input required></label><label>Estado<select required>
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>DF</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PE</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+      </select></label>
+    </div>
+    <label class="check">
+      <input type="checkbox"> Tornar essas informações padrão de entrega.
+    </label>
+    <button class="btn v larg">Editar</button>
+  </form>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/dados.js"></script>
+</body>
+</html>

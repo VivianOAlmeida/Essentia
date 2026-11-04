@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="pix">
+<div class="app">
+<section class="screen ativa" id="pix">
+  <header class="topo verde-esc">
+    <button class="voltar" onclick="back()">←</button>
+    <span class="titulo">Pagamento Pix</span>
+  </header>
+  <div class="total">
+    <span>Pagamento Total</span>
+    <b>R$19,50</b>
+  </div>
+  <div class="codigo-pix">
+    <p>Código Pix</p>
+    <div id="codigo">08756433008183002834</div>
+    <button class="chip" onclick="copiar()">Copiar código</button>
+  </div>
+  <p class="instr-t">Por favor, siga as instruções:</p>
+  <ol class="instrucoes">
+    <li>Copie o código pix acima;</li>
+    <li>Acesse o app do seu banco de preferência;</li>
+    <li>Escolha pagar com o pix, cole o código e finalize o pagamento;</li>
+    <li>Seu pagamento será aprovado em segundos.</li>
+  </ol>
+  <button class="btn v centro grande" onclick="processar({tipo:'pix'})">OK</button>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/pagamento.js"></script>
+<script src="../js/pix.js"></script>
+</body>
+</html>

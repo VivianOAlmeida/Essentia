@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/feed.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="perfil">
+<div class="app">
+<section class="screen ativa" id="perfil">
+  <header class="perfil-topo">
+    <div class="perfil-linha">
+      <span>Nome do artista</span>
+      <button onclick="go('config')" aria-label="Configurações">⚙</button>
+    </div>
+    <div class="perfil-info">
+      <img class="foto" src="../img/default.png" alt="Foto de perfil">
+      <div class="info"><p>Informações do artista.</p>
+        <div>
+          <button class="btn p" onclick="go('editar-dados')">Editar</button>
+          <button class="btn p" onclick="go('postar-obra')">Postar Obra</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article class="post">
+    <div class="autor">
+      <img class="avatar" src="../img/default.png" alt="">
+      <div>Nome do usuário - @usuário<small>Descrição da obra</small>
+      </div>
+    </div>
+    <div class="img" onclick="go('obra')">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+  </article>
+  <article class="post">
+    <div class="autor">
+      <img class="avatar" src="../img/default.png" alt="">
+      <div>Nome do usuário - @usuário<small>Descrição da obra</small></div>
+    </div>
+    <div class="img" onclick="go('obra')">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+  </article>
+</section>
+<nav class="nav" id="nav">
+  <button data-go="feed" aria-label="Feed">🖼</button>
+  <button data-go="chats" aria-label="Chats">💬</button>
+  <button data-go="perfil" aria-label="Perfil">👤</button>
+</nav>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/login.css">
+</head>
+<body data-page="cadastro">
+<div class="app">
+<section class="screen verde ativa" id="cadastro">
+  <h1 class="logo">Essentia</h1>
+  <form class="card" onsubmit="event.preventDefault();go('cadastrar-dados')">
+    <h2>Cadastrar-se</h2>
+    <input placeholder="E-mail ou número de telefone" required>
+    <input type="password" placeholder="Senha" required>
+    <input placeholder="Nome completo" required>
+    <input type="date" aria-label="Data de nascimento" required>
+    <div class="sociais">
+      <span>f</span>
+      <span>G</span>
+      <span>W</span>
+    </div>
+    <button class="btn">Cadastrar-se</button>
+    <a href="#" onclick="go('login')">Já tenho conta</a>
+  </form>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

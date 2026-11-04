@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/feed.css">
+</head>
+<body data-page="perfil-artista">
+<div class="app">
+<section class="screen ativa" id="perfil-artista">
+  <header class="perfil-topo">
+    <div class="perfil-linha">
+      <button onclick="back()" aria-label="Voltar">←</button>
+      <span>Nome do artista</span>
+    </div>
+    <div class="perfil-info">
+      <img class="foto" src="../img/default.png" alt="Foto de perfil">
+      <div class="info">
+        <p>Informações do artista.</p>
+        <div>
+          <button class="btn p" onclick="this.textContent=this.textContent=='Seguir'?'Seguindo':'Seguir'">Seguir</button>
+          <button class="btn p" onclick="go('conversa')">Mensagem</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article class="post">
+      <div class="autor">
+        <img class="avatar" src="../img/default.png" alt="">
+      <div>Nome do usuário - @usuário
+        <small>Descrição da obra</small>
+      </div>
+    </div>
+    <div class="img" onclick="go('obra')">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+  </article>
+  <article class="post">
+    <div class="autor">
+      <img class="avatar" src="../img/default.png" alt="">
+      <div>Nome do usuário - @usuário
+        <small>Descrição da obra</small>
+      </div>
+    </div>
+    <div class="img" onclick="go('obra')">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+  </article>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

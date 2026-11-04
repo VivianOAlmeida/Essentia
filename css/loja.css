@@ -1,0 +1,320 @@
+/* Configurações, produto, carrinho, compra, cartões e Pix */
+.menu{
+    list-style:none
+}
+.menu li{
+    padding:24px 16px;
+    margin-bottom:12px;
+    cursor:pointer
+}
+.menu .v{
+    background:var(--verde-cl)
+}
+.menu .r{
+    background:var(--salmao)
+}
+.aviso{
+    background:var(--pessego);
+    margin:16px;
+    padding:14px;
+    border-radius:10px;
+    font-size:12px
+}
+.vazio{
+    text-align:center;
+    padding:60px 30px
+}
+.vazio p{
+    background:var(--pessego);
+    padding:10px;
+    border-radius:10px;
+    margin:14px 0
+}
+.produto-info{
+    padding:0 16px
+}
+.produto-info h3{
+    font-weight:400;
+    font-size:22px;
+    margin:6px 0
+}
+.produto-info .btn{
+    display:block;
+    width:100%;
+    margin:12px 0
+}
+.item-carrinho{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    border:1px solid #333;
+    margin:10px 14px;
+    padding:8px
+}
+.miniatura{
+    width:70px;
+    height:70px;
+    background:#d9d9d9;
+    flex:none
+}
+.rodape-carrinho{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    background:var(--verde-cl);
+    align-items:center;
+    padding-left:10px;
+    font-size:12px
+}
+.rodape-carrinho span{
+    flex:1
+}
+.rodape-carrinho button{
+    background:var(--laranja);
+    padding:18px 14px;
+    cursor:pointer
+}
+.screen h4{
+    font:400 13px "Open Sans";
+    margin:10px 14px 2px
+}
+.caixa{
+    border:1px solid #333;
+    margin:0 14px;
+    padding:8px;
+    font-size:12px
+}
+.caixa.item{
+    display:flex;
+    gap:10px;
+    align-items:center
+}
+.pagto button{
+    display:block;
+    width:80%;
+    margin:8px auto;
+    padding:8px;
+    background:var(--verde-cl);
+    cursor:pointer
+}
+.frete{
+    display:block;
+    text-align:right
+}
+.final{
+    background:var(--verde-cl);
+    padding:20px;
+    font-size:14px
+}
+.sobre-card{
+    background:var(--pessego);
+    margin:16px;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 2px 6px #0003;
+    font-family:"Open Sans";
+    line-height:1.4
+}
+.sobre-card p{
+    margin-bottom:8px
+}
+.notificacao{
+    background:var(--verde-cl);
+    height:60px;
+    border-radius:14px;
+    margin:14px
+}
+.banco summary{
+    background:var(--verde-cl);
+    padding:14px;
+    cursor:pointer;
+    list-style:none
+}
+.banco p{
+    background:var(--verde-cl);
+    padding:12px;
+    border-top:1px solid #fff
+}
+.novo-cartao{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--verde);
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    cursor:pointer
+}
+.novo-cartao span{
+    background:var(--verde-cl);
+    font-size:28px;
+    padding:0 12px
+}
+.form-cartao{
+    padding:16px
+}
+.form-cartao input{
+    background:var(--verde-cl);
+    padding:16px
+}
+.duas{
+    display:flex;
+    gap:10px
+}
+.total{
+    display:flex;
+    justify-content:space-between;
+    background:var(--salmao);
+    margin:10px 12px;
+    padding:14px
+}
+.codigo-pix{
+    background:var(--verde);
+    text-align:center;
+    padding:12px
+}
+#codigo{
+    background:var(--creme);
+    display:inline-block;
+    width:150px;
+    padding:6px;
+    margin:8px;
+    word-break:break-all;
+    font-size:18px
+}
+.instr-t{
+    padding:6px 12px
+}
+.instrucoes{
+    background:var(--salmao);
+    padding:12px 12px 12px 32px;
+    font-size:12px;
+    margin:0 0 20px
+}
+.tit-dados{
+    font:400 22px "Open Sans";
+    text-align:center;
+    background:var(--verde-cl);
+    padding:12px
+}
+.dados{
+    padding:8px 0 20px
+}
+.dados label{
+    display:block;
+    font-size:11px;
+    margin:8px 0 0
+}
+.dados input,.dados select,.dados textarea{
+    display:block;
+    width:100%;
+    background:var(--salmao);
+    border-radius:0;
+    padding:10px;
+    margin:2px 0 4px;
+    font:inherit;
+    font-size:13px;
+    border:0
+}
+.dados textarea{
+    background:var(--verde-cl);
+    resize:none
+}
+.dados .duas label{
+    flex:1
+}
+.dados label.check{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin:14px
+}
+.dados label.check input{
+    width:auto;
+    margin:0
+}
+.dados .btn.larg{
+    display:block;
+    width:calc(100% - 28px);
+    margin:16px 14px;
+    border-radius:6px
+}
+.dados>label,.dados>p,.dados>div{
+    margin-left:14px;
+    margin-right:14px
+}
+.sub{
+    font-size:13px;
+    margin-top:14px
+}
+.upload{
+    display:grid;
+    place-items:center;
+    height:120px;
+    background:#d9d9d9;
+    color:#555;
+    cursor:pointer;
+    margin:2px 0
+}
+.opcao{
+    display:flex!important;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--laranja);
+    padding:10px;
+    margin-top:10px!important;
+    font-size:12px
+}
+.opcao input{
+    width:auto!important;
+    margin:0!important;
+    accent-color:#fff
+}
+.abas{
+    display:flex;
+    gap:6px;
+    padding:10px 14px
+}
+.abas button{
+    flex:1;
+    background:var(--verde-cl);
+    border-radius:10px;
+    padding:4px;
+    cursor:pointer;
+    font-size:12px
+}
+.abas .ativa{
+    background:var(--laranja)
+}
+.rastrear{
+    font-size:10px;
+    color:#3ab
+}
+.pagto button.sel{
+    background:var(--verde);
+    font-weight:500;
+    outline:2px solid var(--laranja)
+}
+.pag-sel{
+    text-align:center;
+    font-size:11px;
+    margin-top:4px
+}
+.erro{
+    background:var(--laranja);
+    margin:8px 14px;
+    padding:10px;
+    border-radius:8px;
+    font-size:12px
+}
+.erro[hidden]{
+    display:none
+}
+.parcela{
+    cursor:pointer
+}
+.parcela:hover{
+    background:var(--verde)
+}

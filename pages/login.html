@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/login.css">
+</head>
+<body data-page="login">
+<div class="app">
+<section class="screen verde ativa" id="login">
+  <h1 class="logo">Essentia</h1>
+  <form class="card" onsubmit="event.preventDefault();go('carregamento')">
+    <h2>Entrar</h2>
+    <input placeholder="E-mail ou nome de usuário" required>
+    <input type="password" placeholder="Senha" required>
+    <a class="esqueci" href="#">Esqueceu sua senha?</a>
+    <div class="sociais">
+      <span>f</span>
+      <span>G</span>
+      <span></span>
+    </div>
+    <button class="btn">Login</button>
+    <a href="#" onclick="go('cadastro')">Criar conta</a>
+  </form>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

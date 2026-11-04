@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/feed.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="feed">
+<div class="app">
+<section class="screen ativa" id="feed">
+  <header class="busca">
+    <input placeholder="Pesquisar arte ou artistas">
+  </header>
+  <article class="post">
+    <div class="autor">
+      <img class="avatar" src="../img/default.png" alt="" onclick="go('perfil-artista')">
+      <a href="#" onclick="go('perfil-artista')">@usuarioF</a>
+    </div>
+    <small class="tag">Desenho/Venda</small>
+    <div class="img" onclick="go('obra')">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+    <div class="acoes">
+      <button onclick="toggle('com1')">💬 Comentar</button>
+      <button onclick="this.classList.toggle('on')">☆ Salvar</button>
+      <button onclick="this.classList.toggle('on')">♡ Curtir</button>
+    </div>
+    <div class="comentarios" id="com1" hidden>
+      <div class="comentario">
+        <img class="avatar" src="../img/default.png" alt="">
+        <p>Que obra incrível!</p>
+      </div>
+      <div class="comentario">
+        <img class="avatar" src="../img/default.png" alt="">
+        <p>Quanto custa?</p>
+      </div>
+      <form onsubmit="event.preventDefault();addComentario(this)">
+        <input placeholder="Escreva um comentário">
+      </form>
+    </div>
+  </article>
+  <article class="post">
+    <div class="autor">
+      <img class="avatar" src="../img/default.png" alt="">
+      <a href="#">@usuarioG</a>
+    </div>
+    <div class="img">
+      <img src="../img/default.png" alt="Obra">
+    </div>
+  </article>
+</section>
+<nav class="nav" id="nav">
+  <button data-go="feed" aria-label="Feed">🖼</button>
+  <button data-go="chats" aria-label="Chats">💬</button>
+  <button data-go="perfil" aria-label="Perfil">👤</button>
+</nav>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/feed.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/feed.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="conversa">
+<div class="app">
+<section class="screen creme ativa" id="conversa">
+  <header class="topo verde-esc">
+    <button class="voltar" onclick="back()">←</button>
+    <img class="avatar" src="../img/default.png" alt="" onclick="go('perfil-artista')">
+    <b onclick="go('perfil-artista')" style="cursor:pointer">Usuário F</b>
+  </header>
+  <div class="mensagens" id="mensagens">
+    <div class="msg recebida">Como funciona a entrega?</div>
+    <div class="msg enviada">Temos vários meios de entrega, quando for comprar pode escolher o frete que preferir!</div>
+    <div class="msg recebida">Entendi, obrigada!</div>
+  </div>
+  <form class="envio" onsubmit="event.preventDefault();enviar(this)">
+    <input placeholder="Mensagem"><button>➤</button>
+  </form>
+</section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* Feed, perfil, chats e conversa */
+.post{
+    padding:14px
+}
+.autor{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-bottom:8px;
+    font-size:14px
+}
+.autor small{
+    display:block;
+    font-size:11px;
+    border-bottom:1px dashed #333
+}
+.avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#ddd;
+    border:1px solid #888;
+    flex:none;
+    display:inline-block
+}
+.avatar.grande{
+    width:80px;
+    height:80px
+}
+.post {
+    padding: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+.img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.img.grande{
+    height:260px;
+    margin:16px;
+    cursor:default
+}
+.acoes{
+    display:flex;
+    justify-content:space-around;
+    padding:8px 0
+}
+.acoes button{
+    background:none;
+    font-size:12px;
+    cursor:pointer
+}
+.acoes .on{
+    color:var(--laranja)
+}
+.comentarios{
+    background:var(--salmao);
+    border:1px solid var(--laranja);
+    border-radius:12px;
+    padding:8px
+}
+.comentario{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    background:var(--laranja);
+    padding:6px;
+    margin-bottom:6px
+}
+.comentarios form input{
+    background:var(--creme);
+    margin:0
+}
+.perfil-topo{
+    background:var(--verde);
+    padding:10px 12px 14px;
+    border-radius:0 0 20px 20px
+}
+.perfil-linha{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:8px;
+    border-bottom:1px solid #333
+}
+.perfil-linha button{
+    background:var(--verde-cl);
+    font-size:22px;
+    padding:2px 16px;
+    cursor:pointer
+}
+.perfil-info{
+    display:flex;
+    gap:12px;
+    margin-top:10px
+}
+.foto{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:var(--verde-cl);
+    display:grid;
+    place-items:center;
+    text-align:center;
+    font-size:12px;
+    flex:none
+}
+.info{flex:1}.info p{
+    background:var(--verde-cl);
+    padding:14px 8px;
+    margin-bottom:8px;
+    text-align:center
+}
+.lista-chat{
+    list-style:none;
+    margin-top:20px
+}
+.lista-chat li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--verde-cl);
+    padding:10px 14px;
+    margin-bottom:10px;
+    cursor:pointer
+}
+.lista-chat li .avatar{
+    background:#fff
+}
+.creme{
+    background:var(--pessego)
+}
+.mensagens{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    padding:16px;
+    height:calc(100% - 140px);
+    overflow-y:auto
+}
+.msg{
+    max-width:75%;
+    padding:12px;
+    border-radius:4px
+}
+.recebida{
+    background:var(--laranja);
+    align-self:flex-start
+}
+.enviada{
+    background:var(--salmao);
+    align-self:flex-end
+}
+.envio{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    gap:8px;
+    padding:10px;
+    background:var(--verde-cl)
+}
+.envio input{
+    margin:0;
+    border-radius:20px;
+    background:var(--creme)
+}
+.envio button{
+    background:none;
+    font-size:22px
+}
+#obra{
+    background:#d9d9d9;
+    padding:0
+}
+.fechar{
+    position:absolute;
+    top:8px;
+    left:12px;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+    z-index:2
+}
+.obra-img{
+    height:calc(100% - 140px);
+    display:grid;
+    place-items:center
+}
+.obra-desc{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:140px;
+    background:#777;
+    color:#fff;
+    padding:8px;
+    font-size:12px
+}
+.perfil-linha button[aria-label=Voltar]{
+    background:none;
+    font-size:22px;
+    padding:0 8px
+}
+.tag{
+    display:inline-block;
+    font-size:9px;
+    background:var(--verde-cl);
+    border-radius:8px;
+    padding:1px 8px;
+    margin-bottom:4px
+}
+.topo-tag{
+    position:absolute;
+    top:14px;
+    left:56px;
+    z-index:2
+}
+.ver-produto{
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:4px 24px;
+    font-size:12px;
+    margin:0;
+    z-index:2
+}
+.obra-img img{
+    object-fit:contain
+}

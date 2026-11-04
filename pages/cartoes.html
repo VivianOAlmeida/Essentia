@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentia</title>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/loja.css">
+<link rel="stylesheet" href="../css/nav.css">
+</head>
+<body data-page="cartoes">
+<div class="app">
+  <section class="screen ativa" id="cartoes">
+    <header class="topo verde-esc">
+      <button class="voltar" onclick="back()">←</button>
+      <span class="titulo">Cartão de crédito</span>
+    </header>
+    <details class="banco" open>
+      <summary>Nubank</summary>
+      <p class="parcela" onclick="escolherCartao('Nubank',1)">1x R$100,00</p>
+      <p class="parcela" onclick="escolherCartao('Nubank',2)">2x R$50,00</p>
+      <p class="parcela" onclick="escolherCartao('Nubank',3)">3x R$33,00</p>
+    </details>
+    <button class="novo-cartao" onclick="go('add-cartao')"><span>+</span> Novo cartão de Crédito</button>
+  </section>
+</div>
+<script src="../js/nav.js"></script>
+<script src="../js/pagamento.js"></script>
+</body>
+</html>
